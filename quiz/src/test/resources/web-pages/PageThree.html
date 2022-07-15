@@ -10,13 +10,15 @@
 
         <button id="button">Submit</button>
     </form>
+    <div id="divMessage"></div>
     </body>
     <script>
         const start = Date.now();
         const inputs = document.getElementsByTagName("input");
 
         document.addEventListener("input", function(event){
-            alert("Laughs in evil")
+            document.getElementById("divMessage").innerHTML=input.value;
+           // alert("Laughs in evil")
         })
 
         document.addEventListener("submit", function (event){

@@ -12,10 +12,12 @@
         <input id="four" type="text" required placeholder="something">
         <button id="submit">Submit</button>
     </form>
+    
     </body>
     <script>
         const start = Date.now();
         const inputs = document.getElementsByTagName("input");
+        
         setInterval(()=>{
             inputs[0].hidden = !inputs[0].hidden
         },500)
@@ -33,6 +35,8 @@
             event.preventDefault();
             const time = Date.now() - start;
             alert(`SUCCESS!!!`)
+          
         })
     </script>
+      <script src="../test-scripts/testpagetwo.js"></script>
 </html>
